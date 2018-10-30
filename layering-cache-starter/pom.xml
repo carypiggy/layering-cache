@@ -7,6 +7,7 @@
         <groupId>com.github.xiaolyuh</groupId>
         <version>1.1.7</version>
     </parent>
+    
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>layering-cache-starter</artifactId>
@@ -15,12 +16,17 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>com.github.xiaolyuh</groupId>
-            <artifactId>layering-cache-aspectj</artifactId>
-            <version>1.1.7</version>
-        </dependency>
-
+    
+    	<!--  	-->
+		<dependency>
+			<groupId>com.github.xiaolyuh</groupId>
+			<artifactId>layering-cache</artifactId>
+			<version>1.1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/lib/layering-cache-1.1.7.jar</systemPath>
+		</dependency>
+	
+	 	
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -54,7 +60,7 @@
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
-            <optional>true</optional>
+            <version>1.8.9</version>
         </dependency>
 
         <dependency>

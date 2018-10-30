@@ -85,13 +85,12 @@
             <artifactId>protostuff-runtime</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
+		<dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <scope>test</scope>
+             <scope>test</scope>
+            <version>2.9.7</version>
         </dependency>
-
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
